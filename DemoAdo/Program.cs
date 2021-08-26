@@ -6,18 +6,23 @@ namespace DemoAdo
     {
         static void Main(string[] args)
         {
-            DbManagerConnectedMode dbm = new DbManagerConnectedMode();
 
-            dbm.fetch();
+            DisconnectedMode discon = new DisconnectedMode();
 
-            dbm.GetById(1);
+            discon.fetch();
+            discon.Insert();
+            //DbManagerConnectedMode dbm = new DbManagerConnectedMode();
 
-            dbm.Insert("1984", "George Orwel", 18);
+            //dbm.fetch();
 
-            Book book = new Book("Decameron", "Giovanni Boccaccio", 32,4);
-            dbm.Update(book);
+            //dbm.GetById(1);
 
-            dbm.Count();
+            //dbm.Insert("1984", "George Orwel", 18);
+
+            //Book book = new Book("Decameron", "Giovanni Boccaccio", 32,4);
+            //dbm.Update(book);
+
+            //dbm.Count();
 
         }
     }

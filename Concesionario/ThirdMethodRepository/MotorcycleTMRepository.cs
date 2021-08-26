@@ -122,7 +122,7 @@ namespace Concesionario.ThirdMethodRepository
                 SqlCommand command = new SqlCommand();
                 command.Connection = connection;
                 command.CommandType = System.Data.CommandType.Text;
-                command.CommandText = "update Vehicle set Year = @year, Brand = @brand, Model = @model, Supply = @supply, @numberOfDoors = @numberOfDoors, NumberOfSeats = @numberOfSaets, Id = @id, Discriminator = @discriminator";
+                command.CommandText = "update Vehicle set Year = @year, Brand = @brand, Model = @model, Supply = @supply, NumberOfDoors = @numberOfDoors, NumberOfSeats = @numberOfSaets, Id = @id, Discriminator = @discriminator";
                 command.Parameters.AddWithValue("@brand", motorcycle.Brand);
                 command.Parameters.AddWithValue("@model", motorcycle.Model);
                 command.Parameters.AddWithValue("@year", motorcycle.Year);
